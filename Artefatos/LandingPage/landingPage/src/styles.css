@@ -1,0 +1,191 @@
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    
+    body {
+        font-family: 'Noto Sans', sans-serif;
+        background-color: #b8f1ff;
+        padding: 0;
+        margin: 0;
+        height: 3vh;
+    }
+
+    #marca {
+        height: 10vh;
+        margin: 5vh 5vh 5vh 10vw;
+    }
+
+    #circulo{
+        z-index: 1;
+        position: absolute;
+        width: 75vw;
+        margin-top: 20vh;
+        margin-left: -10vw;
+        filter: drop-shadow( 29px 19px 6px rgba(0, 0, 0, 0.171));
+    }
+        #productShow{
+            display: in;
+        }
+        #cardRow{
+            position: absolute;
+            display: inline-flex;
+            left: 10vw;
+        }
+            #display{
+                
+                z-index: 3;
+                width: 30vw;
+                height: 50vh;
+                position: absolute;  
+                margin-left: 60vw;
+                background-color: #f2f2f2;
+                filter: drop-shadow( 29px 19px 6px rgba(0, 0, 0, 0.171));
+                border-radius: 15px;
+            }
+        #recorte1 {
+            position: absolute;
+            z-index: 2;
+            width: 48vw;
+            margin-left: 10vw;
+            margin-top: 43vh;
+            filter: drop-shadow( 29px 19px 6px rgba(0, 0, 0, 0.171));
+        }
+    #land1{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        margin-top: 57vh;
+        margin-left: 0;
+        z-index: 2;
+    }
+
+    #land2{
+        width: 100vw;
+        height: auto;
+        margin-top: 120vh;
+        margin-left: 0;
+        position: absolute;
+        z-index: 3;
+    }
+
+    #land3{
+        width: 100%;
+        position: absolute;
+        z-index: 4;
+        margin-top: 220vh;
+        margin-left: 0;
+    }
+        #colmeia{
+            z-index: 5;
+            position: absolute;
+            right: 10vw;
+            top: 255vh;
+            width: 22vw;
+        }
+
+    /* ~~~~~~~~PRALAX CARDS~~~~~~~~ */
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .parallax-card {
+        z-index: 2;
+        filter: drop-shadow( 29px 19px 6px rgba(0, 0, 0, 0.171));
+        width: 13vw;
+        height: 38vh;
+        border-radius: 15px;
+        margin: 0 2vw 0 0;
+    }
+    .parallax-card_holder {
+        height: 100%;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        -webkit-perspective: 1000px;
+                perspective: 1000px;
+        will-change: transform;
+    }
+    .parallax-card_holder:hover .parallax-card_front {
+        transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+    }
+    .parallax-card_holder:hover .parallax-card_back {
+        transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+    }
+    .parallax-card_content {
+        -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+                transform: translateY(-50%) translateZ(60px) scale(0.94);
+        top: 50%;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        box-sizing: border-box;
+        outline: 1px solid transparent;
+        -webkit-perspective: inherit;
+                perspective: inherit;
+        z-index: 2;
+        will-change: transform;
+    }
+    .parallax-card_front {
+        width: 100%;
+        height: auto;
+        background-color: #f2f2f2;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        background-size: cover;
+        min-height: 100%;
+        height: auto;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        border-radius: 10px;
+        color: #1b1a1a ;
+        font-size: 1rem;
+        transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        will-change: transform;
+    }
+    
+    .parallax-card_back {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        background: rgba(30, 50, 49, 1);
+        background-size: cover;
+        transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        will-change: transform;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        color: rgb(175, 203, 216);
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        font-size: 16pt;
+    }
+    .parallax-card_back-descr {
+        display: block;
+        text-align: center;
+    }
+    
