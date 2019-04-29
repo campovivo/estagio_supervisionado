@@ -1,13 +1,15 @@
     ::-webkit-scrollbar {
         width: 0px;
     }
+    html{
+        height: 100%;
+    }
     
     body {
         font-family: 'Noto Sans', sans-serif;
-        background-color: #b8f1ff;
         padding: 0;
         margin: 0;
-        height: 3vh;
+        background-image: linear-gradient( to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 3%, rgba(125,177,255,1) 40%, rgba(231,56,39,1) 100%);
     }
 
     #marca {
@@ -49,6 +51,7 @@
             margin-left: 10vw;
             margin-top: 43vh;
             filter: drop-shadow( 29px 19px 6px rgba(0, 0, 0, 0.171));
+            border-radius: 2%;
         }
     #land1{
         width: 100%;
@@ -57,23 +60,7 @@
         margin-top: 57vh;
         margin-left: 0;
         z-index: 2;
-    }
-
-    #land2{
-        width: 100vw;
-        height: auto;
-        margin-top: 120vh;
-        margin-left: 0;
-        position: absolute;
-        z-index: 3;
-    }
-
-    #land3{
-        width: 100%;
-        position: absolute;
-        z-index: 4;
-        margin-top: 220vh;
-        margin-left: 0;
+        filter: brightness(126%);
     }
         #colmeia{
             z-index: 5;
