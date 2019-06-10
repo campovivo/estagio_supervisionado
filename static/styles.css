@@ -206,15 +206,15 @@
 }
 
 #pacoca {
-    background-image: url(/static/media/pacoca.png);
+    background-image: url(./static/media/pacoca.png);
 }
 
 #mel {
-    background-image: url(/static/media/mel.png);
+    background-image: url(./static/media/mel.png);
 }
 
 #hortalicas {
-    background-image: url(/static/media/hortalicas.png);
+    background-image: url(./static/media/hortalicas.png);
     background-size: 13rem;
 }
 
