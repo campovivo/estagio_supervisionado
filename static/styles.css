@@ -53,6 +53,7 @@
     font-size: 1.6rem;
     text-align: justify;
     position: relative;
+    display: flex !important;
 }
 
 .wrapper {
@@ -232,7 +233,8 @@
 
 #siema-container{
     filter: drop-shadow(12px 12px 6px rgba(0, 0, 0, 0.171));
-    width: 300px;
+    /* width: 300px; */
+    padding: 0;
 }
 
 .section {

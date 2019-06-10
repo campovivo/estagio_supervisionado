@@ -6,7 +6,7 @@ const mySiema = new Siema({
 setInterval(() => mySiema.next(), 5000);
 
 new fullpage('#fullpage', {
-    // scrollBar: true,
+    scrollBar: true,
     onLeave: function(origin, destination, direction){
 		var leavingSection = this;
 
