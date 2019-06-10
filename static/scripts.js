@@ -3,7 +3,7 @@ const mySiema = new Siema({
 	easing: 'cubic-bezier(0.945, 0.345, 0.655, 1)'
 });
 
-setInterval(() => mySiema.next(), 4000);
+setInterval(() => mySiema.next(), 5000);
 
 new fullpage('#fullpage', {
     // scrollBar: true,
